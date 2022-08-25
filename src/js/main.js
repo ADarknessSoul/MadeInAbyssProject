@@ -14,14 +14,12 @@ const abrirMapa = () => {
     barra.addEventListener('click', function(e) {
 
         desplegable.classList.toggle('mapa');
-        desplegable.classList.toggle('no-display');
 
     });
 
     barra2.addEventListener('click', function(e) {
 
         desplegable.classList.remove('mapa');
-        desplegable.classList.add('no-display');
 
     });
 
