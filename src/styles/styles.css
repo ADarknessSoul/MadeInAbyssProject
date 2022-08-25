@@ -1,0 +1,222 @@
+:root {
+
+    --black: #17202a;
+    --gray: #28303ada;
+    --orange: #7cf32de1;  
+    --white: #f4f6f7; 
+    --blue: #5dade2;
+    --green: #28b463;
+    --green_clair: #52be817a;
+    --primary: #e00dbd;
+
+    --primary-font: 'Aboreto', cursive; /*font-family: 'Aboreto', cursive;*/
+
+}
+
+.no-display {
+  display: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after { /*Arregla el padding para que no agregue más tamaño al bloque*/
+    box-sizing: inherit;
+  }
+
+  body {
+
+    font-family: 'Aboreto', cursive;;
+
+  }
+
+  .contenedor {
+
+    width: min(90%, 120rem);
+    margin: 0 auto;
+
+  }
+
+  .contenido-header {
+    height: 50rem;
+    padding-top: 2rem;
+
+    background-image: url(../../images/MadeInAbyss_Portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  /*Seccion desplegable*/
+
+  .lateral {
+    width: max(3rem); 
+    display: flex;
+    position: fixed; 
+    height: 100vh;
+    background-color: var(--white);
+    justify-content: center;
+    border-right: 2px solid var(--green);
+
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,173,226,0.5410539215686274) 35%, rgba(0,212,255,1) 100%);
+  }
+
+  .lateral__imagen {
+    width: 4rem;
+  }
+
+  .lateral__imagen:hover {
+
+    filter: invert(100%);
+    cursor: pointer;
+
+  }
+
+  /* .section-pruebas {
+
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+  } */
+
+  /*Header*/
+
+  .contenido-header h1{
+
+    text-transform: uppercase;
+    color:var(--orange);
+    font-size: 3rem;
+    text-decoration: underline;
+    background-color: var(--green_clair);
+
+  }
+
+  .header__logo img {
+
+    width: 10rem;
+    margin-left: 0 auto;
+
+  }
+
+  .contenido-header h1 {
+
+    color: var(--black );
+    padding: 2rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+
+
+.header__enlaces {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+  .header__enlaces a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--orange);
+    font-weight: bold;
+    background-color: var(--black);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid var(--white);
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+
+  }
+
+  .header__enlaces a:hover {
+
+    color: var(--blue)
+
+  }
+  
+.barra {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+/*Desplegable*/
+
+.desplegable {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+/*Cita*/
+
+.cita {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* margin-top: 3rem; */
+  background-color: var(--black);
+  column-gap: 3rem;
+  place-items: center;
+
+}
+
+.cita__imagen {
+
+  padding: 5rem;
+  background-color: var(--gray);
+  border-radius: 60rem;
+  margin: 2rem;
+
+}
+
+.cita__imagen img {
+
+  max-width: 50rem;
+
+}
+
+.cita__imagen--texto {
+
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--white);
+
+}
+
+.cita__texto {
+  
+  color: var(--white);
+  font-size: 5rem;
+
+}
+
+/*Mapa desplegable*/
+
+.mapa {
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  /* background-color: #f4f6f7; */
+
+
+}
