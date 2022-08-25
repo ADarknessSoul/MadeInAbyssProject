@@ -18,17 +18,32 @@
 </head>
 <body>
     
-    <div class="lateral">
+    <aside id="lateral1" class="lateral">
 
         <img class="lateral__imagen" src="./images/arrow-drop-right-fill.svg" alt="Flecha"> 
 
-    </div>
+    </aside>
 
-    <section class="mapa no-display">
+    <section id="mapa" class="no-display">
+
+        <aside id="lateral2" class="lateral lateral--mapa">
+
+            <img class="lateral__imagen" src="./images/arrow-drop-left-fill.svg" alt="Flecha"> 
+    
+        </aside>
+
 
         <h1>Capa 1</h1>
 
-        <img src="" alt="">
+        <img class="mapa__portada" src="./images/Capa1.JPG" alt="Capa 1">
+
+        <div class="mapa__scroll">
+
+            <img class="mapa__img1" src="./images/scroll-left.svg" alt="izquierda">
+            <img class="mapa__img2" src="./images/Maldicion1.JPG" alt="Maldición capa 1">
+            <img class="mapa__img3" src="./images/scroll-right.svg" alt="Maldición capa 2">
+
+        </div>
 
     </section>
 
@@ -77,6 +92,8 @@
         </div>
 
     </main>
+
+    <script src="./src/js/main.js"></script>
 
 </body>
 </html>
