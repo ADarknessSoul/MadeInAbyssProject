@@ -341,7 +341,7 @@ html {
   flex-direction: column;
   align-items: center;
   background: rgb(22,16,14);
-  background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 25%, rgb(14, 71, 39) 100%);
+  background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 5%, #A18B67 100%);
   padding: 2rem;
   border-radius: 1rem;
   position:static;
@@ -363,6 +363,13 @@ html {
 }
 
 
+#imagenAbismo {
+
+  box-shadow: 0px 5px 15px 1px  #000000;
+  padding: 2rem;
+
+}
+
 .mapa__contenedor {
 
   height: fit-content;
@@ -381,10 +388,12 @@ html {
 
 .mapa__img1, .mapa__img3 {
 
-  width: 5rem;
+  width: 7rem;
   filter: invert(100%);
   background-color: var(--white);
   border-radius: 50%;
+  box-shadow: 0px 3px 15px 1px  #000000;
+  padding: 1rem;
 
 }
 
@@ -408,6 +417,6 @@ html {
 .mapa__img1:hover, .mapa__img3:hover {
 
   cursor: pointer;
-  width: 6rem;
+  width: 8rem;
 
 }
