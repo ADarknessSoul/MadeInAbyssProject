@@ -40,6 +40,7 @@ html {
 
   }
 
+
   .contenido-header {
     height: 50rem;
     padding-top: 2rem;
@@ -65,6 +66,7 @@ html {
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,173,226,0.5410539215686274) 35%, rgba(0,212,255,1) 100%);
   }
+
 
   .lateral:hover {
 
