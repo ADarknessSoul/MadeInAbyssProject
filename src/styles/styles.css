@@ -51,7 +51,7 @@ html {
 
 
   .contenido-header {
-    height: 50rem;
+    height: 70rem;
     padding-top: 2rem;
 
     background-image: url(../../images/MadeInAbyss_Portada.jpg);
@@ -64,7 +64,7 @@ html {
   /*Seccion desplegable*/
 
   .lateral {
-    width: max(3rem); 
+    width: max(1.5rem); 
     display: flex;
     position: fixed; 
     height: 100%;
@@ -74,6 +74,14 @@ html {
 
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,173,226,0.5410539215686274) 35%, rgba(0,212,255,1) 100%);
+  }
+
+  @media (min-width: 480px) {
+      .lateral {
+
+        width: max(3rem); 
+
+      }
   }
 
 
@@ -126,7 +134,7 @@ html {
   .header__logo img {
 
     width: 10rem;
-    margin-left: 0 auto;
+    margin: 0 auto;
 
   }
 
@@ -298,8 +306,11 @@ html {
   /* position: fixed; */
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: inline-grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  place-items: center;
   align-items: center;
   justify-content: center;
   background: rgb(22,16,14);
@@ -319,20 +330,52 @@ html {
 .mapa h1 {
 
   color: var(--white);
-  font-size: 2rem;
+  font-size: 3rem;
+  text-decoration: underline;
 
 }
 
 .mapa__scroll {
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
-  margin-top: 2rem;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgb(22,16,14);
-  background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 35%, rgb(14, 71, 39) 100%);
+  background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 25%, rgb(14, 71, 39) 100%);
   padding: 2rem;
+  border-radius: 1rem;
+  position:static;
+
+}
+
+@media (min-width: 768px) {
+    
+  .mapa__scroll {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+    place-items: center;
+
+  }
+
+}
+
+
+.mapa__contenedor {
+
+  height: fit-content;
+  max-height: 300px;
+  width: 90%;
+  overflow: scroll;
+
+
+}
+
+.mapa__portada {
+
+  height: auto;
 
 }
 
@@ -342,6 +385,23 @@ html {
   filter: invert(100%);
   background-color: var(--white);
   border-radius: 50%;
+
+}
+
+.mapa__img2 {
+
+  width: 200px;
+
+}
+
+@media (min-width: 768px) {
+    
+  .mapa__img2 {
+
+    height: 277px;
+    width: 35rem;
+  
+  }
 
 }
 
