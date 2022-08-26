@@ -18,6 +18,15 @@
   display: none;
 }
 
+.no-visibility {
+
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  transition: visibility 0s, opacity 0.5s linear;
+
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box; 
@@ -286,7 +295,7 @@ html {
 
 .mapa {
 
-  position: fixed;
+  /* position: fixed; */
   height: 100%;
   width: 100%;
   display: flex;
@@ -297,6 +306,13 @@ html {
   background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 35%, rgba(0,0,0,0.9531162806919643) 100%)
 
   
+
+}
+
+.mapa.no-visibility {
+
+  visibility: visible;
+  opacity: 1;
 
 }
 
