@@ -66,6 +66,12 @@ html {
 
   }
 
+  li {
+
+    list-style: none;
+
+  }
+
   .contenedor {
 
     width: min(90%, 120rem);
@@ -440,8 +446,8 @@ html {
 .Capas {
 
   background-color: var(--white);
-  width: 80%;
-  margin: 2rem auto;
+  width: 90%;
+  margin: 4rem auto;
   padding: 2rem;
   border: 1px solid var(--green);
   border-radius: 1rem;
@@ -473,7 +479,7 @@ html {
 
 .Capas__informacion h1{
 
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -482,14 +488,26 @@ html {
 
 .Capas__grid {
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  
   /* column-gap: 2rem; */
   box-shadow: 0px 5px 10px -5px var(--black);
   border-radius: 1rem;
   padding: 1rem;
 
 }
+
+@media (min-width: 1280px) {
+    
+  .Capas__grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
 
 .Capas__informacion--iconos {
 
@@ -527,7 +545,17 @@ html {
 
 .Capas__informacion--resumen {
 
-  border-right: 1px solid rgba(161, 154, 154, 0.89);
+  padding: 1rem;
+
+}
+
+@media (min-width: 1280px) {
+    
+  .Capas__informacion--resumen {
+
+    border-right: 1px solid rgba(161, 154, 154, 0.89);
+
+  }
 
 }
 
@@ -536,3 +564,31 @@ html {
   margin: 0 auto;
 
 }
+
+/*Personajes*/
+
+.Capas__informacion-personajes {
+
+  padding: 1rem;
+
+}
+
+
+
+@media (min-width: 768px) {
+    
+  .Capas__informacion-personajes-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+  }
+
+}
+
+.personajes img {
+
+  width: 100%;
+
+}
+
