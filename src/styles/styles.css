@@ -235,20 +235,6 @@ html {
   padding: 3rem 0;
  }
 
-@media (min-width: 1200px) {
-    
-  .cita {
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* margin-top: 3rem; */
-    column-gap: 3rem;
-    place-items: center;
-  
-  }
-
-}
-
 .cita__imagen {
 
   padding: 5rem;
@@ -266,11 +252,31 @@ html {
 
 }
 
+.cita__lateral {
+
+  padding: 2rem;
+
+}
+
+
 .cita__texto {
   
   color: var(--white);
+  padding-left: 3rem;
   font-size: 1rem;
-  text-align: center;
+  position: relative;
+
+}
+
+.cita__texto::before {
+  background-image: url(../../images/double-quotes-left.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 8rem;
+  left: 1rem;
+  position: absolute;
+  width: 2rem;
 
 }
 
@@ -283,7 +289,6 @@ html {
 
 }
 
-
 @media (min-width: 320px) {
    
   .cita__imagen img {
@@ -295,18 +300,52 @@ html {
 }
 
 @media (min-width: 480px) {
-    .cita__texto {
-      font-size: 5rem;
-    }
+  .cita__texto {
+    font-size: 5rem;
+    padding-left: 7rem;
+  }
+
+  .cita__texto::before {
+
+    width: 6rem;
+
+  }
 }
 
 @media (min-width: 768px) {
-    .cita__imagen img {
+  .cita__imagen img {
 
-      max-width: 50rem;
+    max-width: 50rem;
 
-    }
+  }
 }
+
+@media (min-width: 1200px) {
+    
+  .cita {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-top: 3rem; */
+    column-gap: 3rem;
+    place-items: center;
+  
+  }
+
+  .cita__texto {
+
+    padding-left: 4rem;
+
+  }
+
+  .cita__texto::before {
+
+    left: -2rem;
+
+  }
+
+}
+
 
 /*Mapa desplegable*/
 
@@ -323,8 +362,8 @@ html {
   align-items: center;
   justify-content: center;
   background: rgb(22,16,14);
-  background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 35%, rgba(0,0,0,0.9531162806919643) 100%)
-
+  background: linear-gradient(180deg, rgba(22,16,14,0.8606793059020483) 35%, rgba(0,0,0,0.9531162806919643) 100%);
+  z-index: 1;
   
 
 }
@@ -379,6 +418,14 @@ html {
 
   box-shadow: 0px 5px 15px 1px  #000000;
   padding: 2rem;
+  transition: padding 0.5s ease;
+
+}
+
+#imagenAbismo:hover {
+
+  cursor: pointer;
+  padding: 2.5rem;
 
 }
 
@@ -393,11 +440,26 @@ html {
 
 }
 
+.mapa__contenedor:hover {
+
+  cursor: pointer;
+
+}
+
 .mapa__portada {
 
   height: auto;
+  transition: opacity 0.5s ease-out;
 
 }
+
+.mapa__portada:hover {
+
+  opacity: 0.5;
+
+}
+
+
 
 .mapa__img1, .mapa__img3 {
 
@@ -446,7 +508,7 @@ html {
 .Capas {
 
   background-color: var(--white);
-  width: 90%;
+  width: 80%;
   margin: 4rem auto;
   padding: 2rem;
   border: 1px solid var(--green);
@@ -592,3 +654,30 @@ html {
 
 }
 
+/*Overlay*/ 
+
+.overlay {
+
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+
+  background-color: rgb(0 0 0 / .5);
+
+
+}
+
+.overlay img {
+
+  width: 100%;
+
+}
