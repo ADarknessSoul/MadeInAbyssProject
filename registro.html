@@ -49,32 +49,49 @@
 
     </header>
     
-    <main>
+    <main class="contenido-main">
 
-        <div class="iframe contenedor">
+        <h2>¡Conviérte en un aventurero del abismo!</h2>        
 
-            <h2>Cómo llegar</h2>
-    
-            
-            
-            <div class="iframe--width margin-auto">
-                <div class="gmap_canvas">
-                    <iframe width="909" height="621" id="gmap_canvas" src="https://maps.google.com/maps?q=kola%20superdeep&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    <a href="https://123movies-to.org"></a>
-                </div>
-            </div>
+        <form class="formulario">
 
-            <h2>Video de referencia</h2>
+            <fieldset>
 
-            <div class="iframe__video iframe--width margin-auto">
+                <legend>Información general</legend>
 
-                <video controls src="/videos/Made_in_Abyss_trailer.mp4"></video>
+                <label for="Nombre">Nombre</label>
+                <input type="text">
 
-            </div>
+                <label for="Correo">Correo</label>
+                <input type="email">
+                
+                <label for="Edad">Edad</label>
+                <input type="date">
 
-        </div>
+                <label for="Contraseña">Contraseña</label>
+                <input type="password">
 
+            </fieldset>
+
+            <fieldset >
+
+                <legend>Información de aventurero</legend>
+
+                <label for="Apodo">Apodo</label>
+                <input type="text">
+
+                <label for="Genero">Género</label>
+                <input type="checkbox" id="Hombre" checked>
+                <label for="Hombre">Hombre</label>
+                <input type="checkbox" id="Mujer">
+                <label for="Mujer">Mujer</label>
+
+                <label>Silbato asignado</label>
+                <input type="checkbox" id="silbato" checked>
+                <label for="silbato">Rojo</label>
+
+            </fieldset>
+
+        </form>
 
     </main>
-
-</body>
