@@ -973,3 +973,9 @@ html {
   color: var(--white);
 
 }
+
+.footer--main {
+
+  margin-top: 0;
+
+}
