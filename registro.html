@@ -53,45 +53,131 @@
 
         <h2>¡Conviérte en un aventurero del abismo!</h2>        
 
-        <form class="formulario">
+        <div class="aside">
 
-            <fieldset>
+            <form class="formulario contenedor">
 
-                <legend>Información general</legend>
+                <fieldset>
+    
+                    <legend>Información general</legend>
+    
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text">
+    
+                    <label for="Correo">Correo:</label>
+                    <input type="email">
+                    
+                    <label for="Edad">Fecha de nacimiento:</label>
+                    <input type="date">
+    
+                    <label for="Contraseña">Contraseña:</label>
+                    <input type="password">
+    
+                </fieldset>
+    
+                <fieldset >
+    
+                    <legend>Información de aventurero</legend>
+    
+                    <label for="Apodo">Apodo:</label>
+                    <input type="text">
+    
+                    <label for="Genero">Género:</label>
+    
+                    <div class="formulario__radio">
+    
+                        <label for="Hombre">Hombre</label>
+                        <input type="radio" id="Hombre" checked name="sexo">
+    
+                    </div>
+    
+                    <div class="formulario__radio">
+    
+                        <label for="Mujer">Mujer</label>
+                        <input type="radio" id="Mujer" name="sexo">
+    
+                    </div>
+    
+                    <label>Silbato asignado:</label>
+    
+                    <div class="formulario__radio">
+    
+                        <label for="silbato-rojo">Rojo</label>
+                        <input type="radio" id="silbato-rojo" checked name="silbato">
+                        <label for="silbato-azul">Azul</label>
+                        <input type="radio" id="silbato-azul"  name="silbato">
+                        <label for="silbato-purpura">Purpura</label>
+                        <input type="radio" id="silbato-purpura"  name="silbato">
+                        <label for="silbato-negro">Negro</label>
+                        <input type="radio" id="silbato-negro"  name="silbato">
+                        <label for="silbato-blanco">Blanco</label>
+                        <input type="radio" id="silbato-blanco"  name="silbato">
+    
+                    </div>
+    
+    
+    
+                </fieldset>
+    
+                <input type="submit">
+    
+            </form>
 
-                <label for="Nombre">Nombre</label>
-                <input type="text">
 
-                <label for="Correo">Correo</label>
-                <input type="email">
-                
-                <label for="Edad">Edad</label>
-                <input type="date">
+            <aside class="formulario__aside">
 
-                <label for="Contraseña">Contraseña</label>
-                <input type="password">
+                <h2>Significado de cada silbato:</h2>
 
-            </fieldset>
+                <div class="aside__lista">
 
-            <fieldset >
+                    <ol>
 
-                <legend>Información de aventurero</legend>
+                        <li><div class="lista__elemento">
+                            
+                            <img src="/images/Silbatos/Silbato_rojo.jpg" alt="Silbato rojo">
+                            <p>Silbato rojo: lo portan los aprendices. Pueden bajar hasta la primera capa</p>
 
-                <label for="Apodo">Apodo</label>
-                <input type="text">
+                        </div></li>
 
-                <label for="Genero">Género</label>
-                <input type="checkbox" id="Hombre" checked>
-                <label for="Hombre">Hombre</label>
-                <input type="checkbox" id="Mujer">
-                <label for="Mujer">Mujer</label>
+                        <li><div class="lista__elemento">
+                            
+                            <img src="/images/Silbatos/Silbato_azul.jpg" alt="Silbato azul">
+                            <p>Silbato azul: Son silbatos un poco más experimentados. Pueden llegar hasta la segunda capa</p>
 
-                <label>Silbato asignado</label>
-                <input type="checkbox" id="silbato" checked>
-                <label for="silbato">Rojo</label>
+                        </div></li>
 
-            </fieldset>
+                        <li><div class="lista__elemento">
+                            
+                            <img src="/images/Silbatos/Silbato_lunar.jpg" alt="Silbato rojo">
+                            <p>Silbato purpura: Aquellos que lo portan son instructores de otros silbatos. Pueden llegar hasta la cuarta capa</p>
 
-        </form>
+                        </div></li>
+
+                        <li><div class="lista__elemento">
+                            
+                            <img src="/images/Silbatos/Silbato_negro.jpg" alt="Silbato rojo">
+                            <p>Silbato negro: Son silbatos sumamente experimentados en el abismo. Pueden llegar hasta las profundidades de la quinta capa</p>
+
+                        </div></li>
+
+                        <li><div class="lista__elemento">
+                            
+                            <img src="/images/Silbatos/Silbato_blanco.jpg" alt="Silbato rojo">
+                            <p>Silbato blanco: Los silbatos más experimentados de todo el abismo. Hay una cantidad muy limitada de estos. Cada uno tiene un diseño único y no tienen un límite de profundidad</p>
+
+                        </div></li>
+
+                    </ol>
+
+
+
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
 
     </main>
